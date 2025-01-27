@@ -10,7 +10,7 @@ use Luiswagener\Contao\StaticArticleBundle\LuiswagenerStaticArticleBundle;
 
 class Plugin implements BundlePluginInterface
 {
-    public function getBundles(ParserInterface $parser)
+    public function getBundles(ParserInterface $parser): array
     {
         return [
             BundleConfig::create(LuiswagenerStaticArticleBundle::class)
